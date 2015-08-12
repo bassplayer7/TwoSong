@@ -19,13 +19,13 @@
 
 requirejs.config({
     paths: {
-        "jQuery": "https://code.jquery.com/jquery-2.1.4.min"
     }
 });
 
-requirejs(["jQuery"],
-    function($) {
-    "use strict";
+requirejs([],
+    function() {
+        "use strict";
 
-    console.log("App is running");
+        console.log("App is running");
+        console.log(document.getElementById("two_song"));
 });
